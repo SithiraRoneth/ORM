@@ -23,9 +23,7 @@
 - List<Object[]> results = query.list();
 
 # 06
-- Query query = session.createQuery("FROM Book WHERE author.country = :country");
-- query.setParameter("country", specificCountry);
-- List<Book> books = query.list();
+
 
 # 07
 - @OneToMany(mappedBy = "author", cascade = CascadeType.ALL, orphanRemoval = true)
