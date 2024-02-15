@@ -21,6 +21,6 @@ public class Book {
     private String publicationYear;
     private double price;
     @ManyToOne
-    @JoinColumn
+    @JoinColumn(name = "author_id")
     private Author author;
 }
